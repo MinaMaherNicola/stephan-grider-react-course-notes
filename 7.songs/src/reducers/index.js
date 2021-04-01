@@ -2,15 +2,15 @@ import { combineReducers } from 'redux';
 
 const songsReducer = () => {
   return [
-    { title: 'Do I Wanna Know', duration: '4:32' },
-    { title: 'I Want It All', duration: '3:05' },
-    { title: 'Knee Socks', duration: '4:18' },
-    { title: 'I Wanna Be Yours', duration: '3:04' }
+    { title: 'Do I Wanna Know', duration: '3:15' },
+    { title: 'I Want It All', duration: '2:30' },
+    { title: 'Arabella', duration: '4:50' },
+    { title: 'Knee Socks', duration: '1:15' }
   ];
 };
 
 const selectedSongReducer = (selectedSong = null, action) => {
-  if (action.type === 'SONG_SELECTED') {
+  if (action.type === 'SELECT_SONG') {
     return action.payload;
   }
   return selectedSong;
