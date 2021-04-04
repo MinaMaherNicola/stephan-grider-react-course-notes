@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
+import postsReducer from './postsReducer';
 
 export default combineReducers({
-  dummy: () => 'h5a'
+  posts: postsReducer
 });
